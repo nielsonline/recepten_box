@@ -4,6 +4,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem "cocoon"
 gem 'paperclip', '~> 5.1'
 gem 'devise', '~> 4.2'
+gem 'simple_form', '~> 3.2', '>= 3.2.1'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
