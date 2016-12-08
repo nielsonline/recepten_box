@@ -1,4 +1,5 @@
 class ReceptenController < ApplicationController
+  before_action :find_recept, only: [:show, :edit, :update, :destroy]
 
   def index
   end
@@ -11,12 +12,19 @@ class ReceptenController < ApplicationController
   end
 
   def create
-    @recept = Recept.new(recipe_params)
+    @recept = Recept.new(recept_params)
+
+    if @recept.save
+      redirect_to @recept, notice: "Successfully created a new recept."
+    else
+      render 'new'
+    end
   end
 
   private
+
   def recept_params
-    params.require(:recipe).permit(:title, :description)
+    params.require(:recept).permit(:title, :description)
   end
 
   def find_recept

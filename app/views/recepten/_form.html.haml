@@ -3,12 +3,12 @@
     #errors
       %p
         = @recept.errors.count
-    Prevented this recipes from saving
+        Prevented this recept from saving
       %ul
-    - @recept.errors.full_messages.each do |msg|
-    %li= msg
-    .panel.body
+        - @recept.errors.full_messages.each do |msg|
+          %li= msg
+  .panel.body
     = f.input :title, input_html: { class: 'form-control' }
     = f.input :description, input_html: { class: 'form-control' }
 
-    = f.button, :submit  "btn btn-primary"
+  = f.button, :submit, class: "btn btn-primary"

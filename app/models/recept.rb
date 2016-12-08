@@ -1,0 +1,2 @@
+class Recept < ApplicationRecord
+end
