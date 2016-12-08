@@ -1,4 +1,9 @@
 source 'https://rubygems.org'
+gem 'haml', '~> 4.0', '>= 4.0.7'
+gem 'bootstrap-sass', '~> 3.3.6'
+gem "cocoon"
+gem 'paperclip', '~> 5.1'
+gem 'devise', '~> 4.2'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
