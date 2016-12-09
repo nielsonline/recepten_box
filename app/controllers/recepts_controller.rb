@@ -41,7 +41,7 @@ class ReceptsController < ApplicationController
   private
 
   def recept_params
-    params.require(:recept).permit(:title, :description)
+      params.require(:recept).permit(:title, :description, :image)
   end
 
   def find_recepts

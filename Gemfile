@@ -3,8 +3,10 @@ gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem "cocoon"
 gem 'paperclip', '~> 5.1'
+gem 'imagemagick-identify'
 gem 'devise', '~> 4.2'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
+gem 'railties'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
