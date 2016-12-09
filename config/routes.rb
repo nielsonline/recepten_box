@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :recepten
+  resources :recepts
 
-  root "recepten#index"
+  root "recepts#index"
 end
