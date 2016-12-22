@@ -5,5 +5,5 @@
         .recept
           .image_wrapper
             = link_to recept do
-              = image_tag recept.image.url(:medium)
+              = image_tag recept.image.url(:medium), data: { turbolinks: false }
           %h2= link_to recept.title, recept, data: { turbolinks: false }
