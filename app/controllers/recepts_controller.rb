@@ -38,8 +38,6 @@ class ReceptsController < ApplicationController
     redirect_to root_path, notice: "Succesfully deleted the recipe."
   end
 
-  private
-
   def recept_params
       params.require(:recept).permit(:title, :description, :image)
   end

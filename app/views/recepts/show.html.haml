@@ -1,6 +1,8 @@
+= image_tag @recept.image.url(:medium, class: "recept_image")
 %h1= @recept.title
 %p= @recept.description
 
 = link_to "Back", root_path, class: "btn btn-default"
 = link_to "Edit", edit_recept_path, class: "btn btn-default"
-= link_to "Delete", recept_path, method: :delete, data: {confirm: "Are you sure?"}, class: "btn btn-default"
+= link_to "Delete", recept_path, method: :delete, data: {confirm: "Are you sure?"},
+class: "btn btn-default"
