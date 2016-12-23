@@ -1,9 +1,9 @@
-- @recepts.each_slice(3) do |recept|
+- @recepts.each_slice(4) do |recept|
   .row
     - recept.each do |recept|
-      .col-md-4
+      .col-md-3
         .recept
           .image_wrapper
             = link_to recept do
               = image_tag recept.image.url(:medium), data: { turbolinks: false }
-          %h2= link_to recept.title, recept, data: { turbolinks: false }
+          %h4= link_to recept.title, recept, data: { turbolinks: false }
