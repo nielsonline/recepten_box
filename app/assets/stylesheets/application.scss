@@ -25,6 +25,10 @@
 $red: #DB6161;
 $blue: #23527c;
 
+a {
+color: $red;
+}
+
 body {
   background-color: #white;
 }
@@ -44,19 +48,21 @@ body {
 }
 
 .navbar {
-  margin-bottom: 20px;
+  margin-bottom: 5%;
   @include box-shadow;
   border: none;
+  background-color: #CCC;
     .navbar-brand {
     text-transform: uppercase;
     letter-spacing: -1px;
     font-weight: bold;
     font-size: 25px;
+    height: 20%;
   }
 }
 
 .recipe {
-  background-color: $red;
+  background-color: #white;
   border-radius: 5px 0 0;
   margin-bottom: 40px;
   @include box-shadow;
@@ -85,9 +91,6 @@ h2 {
   font-weight: normal;
   line-height: 1.5;
   color: $red;
-  a {
-  color: $red;
-  }
 }
 
 h3 {
@@ -99,8 +102,4 @@ h3 {
   a {
   color: $red;
   }
-}
-
-a {
-color: $red;
 }
